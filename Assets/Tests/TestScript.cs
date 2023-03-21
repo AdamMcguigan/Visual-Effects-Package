@@ -6,35 +6,37 @@ using UnityEngine.TestTools;
 
 public class TestScript
 {
-    
-    public class ParticleSystemTest
-    {
-        private ParticleSystem _particleSystem;
-
-        //"Rain Background"
-        [SetUp]
-        public void Setup()
-        {
-            ParticleSystem hpBar = MonoBehaviour.Instantiate(Resources.Load<ParticleSystem>("Prefabs/Rain Background"));
-        }
-
-        
-        [Test]
-        public void ParticleSystemIsRunning()
-        {
-            Assert.IsTrue(_particleSystem.IsAlive());
-        }
-    }
-
     [UnityTest]
-    public IEnumerator TestHealthBarValue()
+    public IEnumerator TestBackgroundRain()
     {
         ParticleSystem rainBackground = MonoBehaviour.Instantiate(Resources.Load<ParticleSystem>("Prefabs/Rain Background"));
 
         bool isPlaying = rainBackground.isPlaying;
         yield return new WaitForSeconds(0.3f);
 
-        Assert.IsFalse(isPlaying);
+        Assert.IsTrue(isPlaying);
+    }
+
+    [UnityTest]
+    public IEnumerator TestGroundRain()
+    {
+        ParticleSystem rainBackground = MonoBehaviour.Instantiate(Resources.Load<ParticleSystem>("Prefabs/Rain Ground"));
+
+        bool isPlaying = rainBackground.isPlaying;
+        yield return new WaitForSeconds(0.3f);
+
+        Assert.IsTrue(isPlaying);
+    }
+
+    [UnityTest]
+    public IEnumerator TestForegroundRain()
+    {
+        ParticleSystem rainBackground = MonoBehaviour.Instantiate(Resources.Load<ParticleSystem>("Prefabs/Rain Front"));
+
+        bool isPlaying = rainBackground.isPlaying;
+        yield return new WaitForSeconds(0.3f);
+
+        Assert.IsTrue(isPlaying);
     }
 
     // A Test behaves as an ordinary method
