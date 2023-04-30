@@ -1,2 +1,2 @@
 # Visual-Effects-Package
-https://github.com/AdamMcguigan/Visual-Effects-Package.git?path=/Packages/ie.setu.visualeffect#v0.8.0
+https://github.com/AdamMcguigan/Visual-Effects-Package.git?path=/Packages/ie.setu.visualeffect#v0.9.0
