@@ -11,4 +11,25 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Rain Scene.unity
     guid: 560ccade0ef33de4d8f2acbd6280231b
+  - enabled: 1
+    path: Assets/Scenes/Arcane Portal.unity
+    guid: c640009026f6b41489581a4420a76e10
+  - enabled: 1
+    path: Assets/Scenes/Character Effects.unity
+    guid: 1f7c46521d1420748b83f63e897ba9f0
+  - enabled: 1
+    path: Assets/Scenes/Dissolve.unity
+    guid: d8fd28c31dd978041bee01364cb06e30
+  - enabled: 1
+    path: Assets/Scenes/ForceField.unity
+    guid: ced71c6ea93fb8043bc204dcecf6a126
+  - enabled: 1
+    path: Assets/Scenes/Pixelation.unity
+    guid: 7ca7dd1fde871b44b87a987d8a3fc6f9
+  - enabled: 1
+    path: Assets/Scenes/PortalVFX.unity
+    guid: 66740ea85ddf2314abea1241c208024f
+  - enabled: 1
+    path: Assets/Scenes/Scene 2 - Fog.unity
+    guid: b1e70f0dddf4f0846b7b9cf8d3632c07
   m_configObjects: {}
